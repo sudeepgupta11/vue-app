@@ -1,4 +1,5 @@
 <template>
+  <h3 v-if="isLoading">We are fecthing the data. Please Wait!!</h3>
   <div class="flex justify-center items-center p-10">
     <div class="grid lg:grid-cols-3 gap-10">
       <div
@@ -55,6 +56,7 @@ export default {
   data() {
     return {
       users: [],
+      isLoading: true,
     };
   },
   methods: {
@@ -64,6 +66,7 @@ export default {
         .then((response) => {
           console.log(response.data);
           this.users = response.data;
+          this.isLoading = false;
         })
         .catch((error) => {
           console.log(error);
