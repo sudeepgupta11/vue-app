@@ -1,16 +1,16 @@
 <template>
   <div class="grid gap-y-6 grid-cols-12">
     <div
-      class="flex flex-col items-center bg-white rounded-lg border shadow-md md:max-w-2xl col-start-4 col-end-10 relative"
+      class="flex flex-col items-center bg-white rounded-lg border shadow-md md:max-w-2xl col-start-2 col-end-12 md:col-start-4 md:col-end-10 2xl:col-start-5 2xl:col-end-9 relative"
       v-for="item in comments"
       v-bind:key="item.id"
     >
       <img
-        class="w-10 rounded-full p-2"
-        src="https://icon-library.com/images/unknown-person-icon/unknown-person-icon-4.jpg"
-        alt=""
+        class="w-14 rounded-full p-2"
+        src="./../assets/unknownUser.jpg"
+        alt="User"
       />
-      <div class="flex flex-col justify-between p-4 leading-normal">
+      <div class="flex flex-col justify-between p-3 leading-normal">
         <h5 class="text-2xl font-bold text-gray-900">
           {{ item.name }}
         </h5>

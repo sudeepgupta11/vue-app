@@ -10,8 +10,8 @@
           <div class="flex justify-center items-center">
             <img
               class="rounded-full w-2/6"
-              src="https://icon-library.com/images/unknown-person-icon/unknown-person-icon-4.jpg"
-              alt="Sunset in the mountains"
+              src="./../assets/unknownUser.jpg"
+              alt="User"
             />
           </div>
           <div class="px-6 py-4">
